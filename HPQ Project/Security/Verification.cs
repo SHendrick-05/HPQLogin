@@ -102,11 +102,32 @@ namespace HPQ_Project
             SHA512 shaM = SHA512.Create();
             result = shaM.ComputeHash(data);
 
-            // Get the concatenated hash and then circular shift it to get HK'.
+            // Get the concatenated hash and then convert to a hex string
             byte[] result1024 = result.Concat(result).ToArray();
+            string result256h = Conversions.ByteArrayToHexViaLookup32(result1024);
 
+            //Right shift the hex HK to get HK', and make it a byte[]
+            string shifted256h = Conversions.rightShift(result256h, len);
+            byte[] shifted1024 = Conversions.HexToByte(shifted256h);
 
-            throw new NotImplementedException();
+            // Read Y' from the database, and XOR it by HK' to make Y
+            BigInteger Ytransformed = BigInteger.Parse(acc.Ytrns);
+            byte[] Y_orig = new byte[128];
+            byte[] YtrnsArr = Ytransformed.ToByteArray();
+
+            for (int i = 0; i < 128; i++)
+            {
+                int transformInt = YtrnsArr[i] ^ shifted1024[i];
+                Y_orig[i] = Convert.ToByte(transformInt);
+            }
+            BigInteger Y = new BigInteger(Y_orig);
+            BigInteger Z = BigInteger.Parse(acc.Zprim);
+
+            BigInteger Check = BigInteger.Remainder(Z, Y);
+            if (Check == 0)
+                return 0;
+            else
+                return 3;
         }
     }
 }
