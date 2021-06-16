@@ -7,6 +7,8 @@ namespace HPQ_Project
 {
     public class Account  // An account class that will be used for interfacing with the database
     {
+
+
         // A simple constructor method
         public Account(string UN, string EM, string ZP, string YT)
         {
@@ -24,24 +26,10 @@ namespace HPQ_Project
 
     internal static class Databasing
     {
-        private static string dbTXTPath = "database.txt"; 
-        private static string dbPath;
+        public static string dbPath = @"U:\GCSE\Computer Science\CS Coding\HPQ\HPQ Project\database.xlsx";
 
         // A global list of accounts used to save to and load from the database
         private static List<Account> Accounts = new List<Account>();
-
-        internal static void getDatabase()
-        {
-            if (!File.Exists(dbTXTPath))
-            {
-                throw new FileNotFoundException();
-#pragma warning disable 
-                Application.Exit();
-#pragma warning enable
-            }
-            var dbStr = File.ReadAllText(dbTXTPath);
-            dbPath = dbStr;
-        }
 
         // DERIVED METHODS //
 
@@ -53,14 +41,12 @@ namespace HPQ_Project
 
         internal static Account GetAccount(string UName)
         {
-            Account result;
             foreach (Account acc in Accounts)
             {
                 if (acc.Uname == UName)
-                    result = acc;
+                    return acc;
             }
-            result = null;
-            return result;
+            return null;
         }
 
         // SECOND ORDER MANAGEMENT //
@@ -83,7 +69,7 @@ namespace HPQ_Project
         {
             // Load the database
             var exApp = new Excel.Application();
-            var wb = exApp.Workbooks.Open(@"U:\GCSE\CS Coding\HPQ\database.xlsx");
+            var wb = exApp.Workbooks.Open(dbPath);
 
             // Loop over all items in the accounts list
             for (int i = 0; i < toSave.Count; i++)
@@ -113,7 +99,7 @@ namespace HPQ_Project
 
             // Load up the database
             var exApp = new Excel.Application();
-            var wb = exApp.Workbooks.Open(@"U:\GCSE\CS Coding\HPQ\database.xlsx");
+            var wb = exApp.Workbooks.Open(dbPath);
 
             // Loop over all values in database
             // Halt when the next value is null

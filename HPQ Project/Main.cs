@@ -48,19 +48,19 @@ namespace HPQ_Project
             }
             else
             {
-                loginError.Visible = true;
-                regError.Text = errText;
+                logError.Visible = true;
+                logError.Text = errText;
             }
         }
 
         // Login
         private void loginButton_Click(object sender, EventArgs e)
         {
-            loginError.Visible = false;
+            logError.Visible = false;
             
             // Gather variables from the box
             string username = loginUnameBox.Text;
-            string password = regUnameBox.Text;
+            string password = loginPwordBox.Text;
 
             // Attempt the Login
             int result = Verification.logHandle(username, password);
@@ -69,6 +69,7 @@ namespace HPQ_Project
             switch (result)
             {
                 case 0:
+                    displayError(false, "Well done");
                     break;
                 case 1:
                     displayError(false, "Either username or password is empty.");
@@ -77,6 +78,7 @@ namespace HPQ_Project
                     displayError(false, "Username does not exist.");
                     break;
                 case 3:
+                    displayError(false, "Incorrect username/password.");
                     break;
             }
         }
