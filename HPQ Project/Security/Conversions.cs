@@ -32,6 +32,7 @@ namespace HPQ_Project
 
         internal static string rightShift(string key, int shift)
         {
+            //Modulo the shift length and then splice the string and re-arrange it.
             shift %= key.Length;
             return key.Substring(key.Length - shift) + key.Substring(0, key.Length - shift);
         }
@@ -50,13 +51,16 @@ namespace HPQ_Project
         {
             byte[] bytesArr = new byte[(hex.Length) / 2];
 
+            // Separate chars for upper and lower nibble.
             char leftNib;
             char rightNib;
             int x = 0;
             for (int i = 0; i < hex.Length; i += 2, x++)
             {
+                // Get the chars from string
                 leftNib = hex[i];
                 rightNib = hex[i + 1];
+                //Map the char to a hexadecimal dict
                 bytesArr[x] = (byte)((hexmap[leftNib] << 4) | hexmap[rightNib]);
             }
             return bytesArr;

@@ -117,7 +117,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="databasePath" xml:space="preserve">
-    <value>U:\HPQ\HPQ Project\database.xlsx</value>
+  <data name="textBox1.Text" xml:space="preserve">
+    <value>Secure password storage using Prime Decomposition
+
+This project was a project submitted as a HPQ artefact.
+Made by Sean Hendrick, 10P1
+Last modified 14/07/2021
+
+If this project is to be implemented practically, this form would
+be where any login-restricted data/menus would be.</value>
   </data>
 </root>

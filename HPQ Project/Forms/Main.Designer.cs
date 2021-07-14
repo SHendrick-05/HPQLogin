@@ -32,12 +32,14 @@
             this.title = new System.Windows.Forms.Label();
             this.close = new System.Windows.Forms.Button();
             this.loginPanel = new System.Windows.Forms.Panel();
+            this.logError = new System.Windows.Forms.TextBox();
             this.loginUnameBox = new System.Windows.Forms.TextBox();
             this.loginUnameLabel = new System.Windows.Forms.Label();
             this.loginPwordLabel = new System.Windows.Forms.Label();
             this.loginPwordBox = new System.Windows.Forms.TextBox();
             this.loginButton = new System.Windows.Forms.Button();
             this.registerPanel = new System.Windows.Forms.Panel();
+            this.regError = new System.Windows.Forms.TextBox();
             this.regEmailBox = new System.Windows.Forms.TextBox();
             this.regEmailLabel = new System.Windows.Forms.Label();
             this.regUnameBox = new System.Windows.Forms.TextBox();
@@ -48,8 +50,6 @@
             this.logPanelB = new System.Windows.Forms.Button();
             this.regPanelB = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.regError = new System.Windows.Forms.TextBox();
-            this.logError = new System.Windows.Forms.TextBox();
             this.top.SuspendLayout();
             this.loginPanel.SuspendLayout();
             this.registerPanel.SuspendLayout();
@@ -108,6 +108,20 @@
             this.loginPanel.Name = "loginPanel";
             this.loginPanel.Size = new System.Drawing.Size(666, 430);
             this.loginPanel.TabIndex = 2;
+            // 
+            // logError
+            // 
+            this.logError.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.logError.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.logError.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.logError.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.logError.Location = new System.Drawing.Point(25, 231);
+            this.logError.Name = "logError";
+            this.logError.Size = new System.Drawing.Size(636, 26);
+            this.logError.TabIndex = 22;
+            this.logError.Text = "Sample Error Message";
+            this.logError.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.logError.Visible = false;
             // 
             // loginUnameBox
             // 
@@ -179,6 +193,20 @@
             this.registerPanel.Name = "registerPanel";
             this.registerPanel.Size = new System.Drawing.Size(666, 430);
             this.registerPanel.TabIndex = 3;
+            // 
+            // regError
+            // 
+            this.regError.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.regError.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.regError.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.regError.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.regError.Location = new System.Drawing.Point(25, 231);
+            this.regError.Name = "regError";
+            this.regError.Size = new System.Drawing.Size(636, 26);
+            this.regError.TabIndex = 21;
+            this.regError.Text = "Sample Error Message";
+            this.regError.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.regError.Visible = false;
             // 
             // regEmailBox
             // 
@@ -289,37 +317,9 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
             this.label1.Location = new System.Drawing.Point(12, 536);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(410, 24);
+            this.label1.Size = new System.Drawing.Size(342, 24);
             this.label1.TabIndex = 23;
-            this.label1.Text = "Made by Sean Hendrick [10P1] for HPQ.";
-            // 
-            // regError
-            // 
-            this.regError.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.regError.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.regError.Font = new System.Drawing.Font("Century Gothic", 15.75F);
-            this.regError.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.regError.Location = new System.Drawing.Point(25, 231);
-            this.regError.Name = "regError";
-            this.regError.Size = new System.Drawing.Size(636, 26);
-            this.regError.TabIndex = 21;
-            this.regError.Text = "Sample Error Message";
-            this.regError.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.regError.Visible = false;
-            // 
-            // logError
-            // 
-            this.logError.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.logError.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.logError.Font = new System.Drawing.Font("Century Gothic", 15.75F);
-            this.logError.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.logError.Location = new System.Drawing.Point(25, 231);
-            this.logError.Name = "logError";
-            this.logError.Size = new System.Drawing.Size(636, 26);
-            this.logError.TabIndex = 22;
-            this.logError.Text = "Sample Error Message";
-            this.logError.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.logError.Visible = false;
+            this.label1.Text = "Made by Sean Hendrick for HPQ.";
             // 
             // Main
             // 

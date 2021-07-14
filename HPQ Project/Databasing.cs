@@ -1,7 +1,5 @@
 ﻿using System.Collections.Generic;
 using Excel = Microsoft.Office.Interop.Excel;
-using System.Windows.Forms;
-using System.IO;
 
 namespace HPQ_Project
 {
@@ -26,7 +24,7 @@ namespace HPQ_Project
 
     internal static class Databasing
     {
-        public static string dbPath = @"U:\GCSE\Computer Science\CS Coding\HPQ\HPQ Project\database.xlsx";
+        public static string dbPath = Properties.Resources.databasePath;
 
         // A global list of accounts used to save to and load from the database
         private static List<Account> Accounts = new List<Account>();

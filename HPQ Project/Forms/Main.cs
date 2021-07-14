@@ -69,7 +69,9 @@ namespace HPQ_Project
             switch (result)
             {
                 case 0:
-                    displayError(false, "Well done");
+                    // Login valid
+                    SuccessForm sForm = new SuccessForm();
+                    sForm.ShowDialog();
                     break;
                 case 1:
                     displayError(false, "Either username or password is empty.");
@@ -120,12 +122,14 @@ namespace HPQ_Project
         {
             loginPanel.Visible = true;
             registerPanel.Visible = false;
+            this.AcceptButton = loginButton;
         }
 
         private void regPanelB_Click(object sender, EventArgs e)
         {
             loginPanel.Visible = false;
             registerPanel.Visible = true;
+            this.AcceptButton = regButton;
         }
         
     }
