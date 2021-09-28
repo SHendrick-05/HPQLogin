@@ -33,9 +33,9 @@ namespace HPQ_Project
 
             // Variables
             byte[] Xarr = new byte[128],
-                   Yarr = new byte[128];
+                   Yarr = new byte[128]; // Byte arrays to be filled with the primes
             BigInteger X = new BigInteger(),
-                       Y = new BigInteger();
+                       Y = new BigInteger(); // BigInt values to be filled with primes
 
             // Password encryption
             int len = password.Length;

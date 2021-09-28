@@ -38,18 +38,18 @@
             this.loginPwordLabel = new System.Windows.Forms.Label();
             this.loginPwordBox = new System.Windows.Forms.TextBox();
             this.loginButton = new System.Windows.Forms.Button();
-            this.registerPanel = new System.Windows.Forms.Panel();
-            this.regError = new System.Windows.Forms.TextBox();
-            this.regEmailBox = new System.Windows.Forms.TextBox();
-            this.regEmailLabel = new System.Windows.Forms.Label();
-            this.regUnameBox = new System.Windows.Forms.TextBox();
-            this.regUnameLabel = new System.Windows.Forms.Label();
-            this.regPwordLabel = new System.Windows.Forms.Label();
-            this.regPwordBox = new System.Windows.Forms.TextBox();
-            this.regButton = new System.Windows.Forms.Button();
             this.logPanelB = new System.Windows.Forms.Button();
             this.regPanelB = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.regButton = new System.Windows.Forms.Button();
+            this.regPwordBox = new System.Windows.Forms.TextBox();
+            this.regPwordLabel = new System.Windows.Forms.Label();
+            this.regUnameLabel = new System.Windows.Forms.Label();
+            this.regUnameBox = new System.Windows.Forms.TextBox();
+            this.regEmailLabel = new System.Windows.Forms.Label();
+            this.regEmailBox = new System.Windows.Forms.TextBox();
+            this.regError = new System.Windows.Forms.TextBox();
+            this.registerPanel = new System.Windows.Forms.Panel();
             this.top.SuspendLayout();
             this.loginPanel.SuspendLayout();
             this.registerPanel.SuspendLayout();
@@ -177,111 +177,6 @@
             this.loginButton.UseVisualStyleBackColor = true;
             this.loginButton.Click += new System.EventHandler(this.loginButton_Click);
             // 
-            // registerPanel
-            // 
-            this.registerPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.registerPanel.Controls.Add(this.regError);
-            this.registerPanel.Controls.Add(this.regEmailBox);
-            this.registerPanel.Controls.Add(this.regEmailLabel);
-            this.registerPanel.Controls.Add(this.regUnameBox);
-            this.registerPanel.Controls.Add(this.regUnameLabel);
-            this.registerPanel.Controls.Add(this.regPwordLabel);
-            this.registerPanel.Controls.Add(this.regPwordBox);
-            this.registerPanel.Controls.Add(this.regButton);
-            this.registerPanel.ForeColor = System.Drawing.SystemColors.Control;
-            this.registerPanel.Location = new System.Drawing.Point(16, 78);
-            this.registerPanel.Name = "registerPanel";
-            this.registerPanel.Size = new System.Drawing.Size(666, 430);
-            this.registerPanel.TabIndex = 3;
-            // 
-            // regError
-            // 
-            this.regError.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.regError.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.regError.Font = new System.Drawing.Font("Century Gothic", 15.75F);
-            this.regError.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.regError.Location = new System.Drawing.Point(25, 231);
-            this.regError.Name = "regError";
-            this.regError.Size = new System.Drawing.Size(636, 26);
-            this.regError.TabIndex = 21;
-            this.regError.Text = "Sample Error Message";
-            this.regError.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.regError.Visible = false;
-            // 
-            // regEmailBox
-            // 
-            this.regEmailBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.regEmailBox.Font = new System.Drawing.Font("Century Gothic", 15.75F);
-            this.regEmailBox.Location = new System.Drawing.Point(250, 59);
-            this.regEmailBox.Name = "regEmailBox";
-            this.regEmailBox.Size = new System.Drawing.Size(285, 33);
-            this.regEmailBox.TabIndex = 20;
-            // 
-            // regEmailLabel
-            // 
-            this.regEmailLabel.AutoSize = true;
-            this.regEmailLabel.Font = new System.Drawing.Font("Century Gothic", 15.75F);
-            this.regEmailLabel.ForeColor = System.Drawing.SystemColors.Control;
-            this.regEmailLabel.Location = new System.Drawing.Point(171, 62);
-            this.regEmailLabel.Name = "regEmailLabel";
-            this.regEmailLabel.Size = new System.Drawing.Size(64, 24);
-            this.regEmailLabel.TabIndex = 19;
-            this.regEmailLabel.Text = "Email";
-            // 
-            // regUnameBox
-            // 
-            this.regUnameBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.regUnameBox.Font = new System.Drawing.Font("Century Gothic", 15.75F);
-            this.regUnameBox.Location = new System.Drawing.Point(250, 121);
-            this.regUnameBox.Name = "regUnameBox";
-            this.regUnameBox.Size = new System.Drawing.Size(285, 33);
-            this.regUnameBox.TabIndex = 17;
-            // 
-            // regUnameLabel
-            // 
-            this.regUnameLabel.AutoSize = true;
-            this.regUnameLabel.Font = new System.Drawing.Font("Century Gothic", 15.75F);
-            this.regUnameLabel.ForeColor = System.Drawing.SystemColors.Control;
-            this.regUnameLabel.Location = new System.Drawing.Point(131, 124);
-            this.regUnameLabel.Name = "regUnameLabel";
-            this.regUnameLabel.Size = new System.Drawing.Size(113, 24);
-            this.regUnameLabel.TabIndex = 16;
-            this.regUnameLabel.Text = "Username";
-            // 
-            // regPwordLabel
-            // 
-            this.regPwordLabel.AutoSize = true;
-            this.regPwordLabel.Font = new System.Drawing.Font("Century Gothic", 15.75F);
-            this.regPwordLabel.ForeColor = System.Drawing.SystemColors.Control;
-            this.regPwordLabel.Location = new System.Drawing.Point(131, 183);
-            this.regPwordLabel.Name = "regPwordLabel";
-            this.regPwordLabel.Size = new System.Drawing.Size(104, 24);
-            this.regPwordLabel.TabIndex = 15;
-            this.regPwordLabel.Text = "Password";
-            // 
-            // regPwordBox
-            // 
-            this.regPwordBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.regPwordBox.Font = new System.Drawing.Font("Century Gothic", 15.75F);
-            this.regPwordBox.Location = new System.Drawing.Point(250, 180);
-            this.regPwordBox.Name = "regPwordBox";
-            this.regPwordBox.PasswordChar = '*';
-            this.regPwordBox.Size = new System.Drawing.Size(285, 33);
-            this.regPwordBox.TabIndex = 14;
-            // 
-            // regButton
-            // 
-            this.regButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.regButton.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.regButton.ForeColor = System.Drawing.SystemColors.Control;
-            this.regButton.Location = new System.Drawing.Point(279, 275);
-            this.regButton.Name = "regButton";
-            this.regButton.Size = new System.Drawing.Size(155, 43);
-            this.regButton.TabIndex = 13;
-            this.regButton.Text = "Register";
-            this.regButton.UseVisualStyleBackColor = true;
-            this.regButton.Click += new System.EventHandler(this.regButton_Click);
-            // 
             // logPanelB
             // 
             this.logPanelB.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
@@ -321,6 +216,111 @@
             this.label1.TabIndex = 23;
             this.label1.Text = "Made by Sean Hendrick for HPQ.";
             // 
+            // regButton
+            // 
+            this.regButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.regButton.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.regButton.ForeColor = System.Drawing.SystemColors.Control;
+            this.regButton.Location = new System.Drawing.Point(279, 275);
+            this.regButton.Name = "regButton";
+            this.regButton.Size = new System.Drawing.Size(155, 43);
+            this.regButton.TabIndex = 13;
+            this.regButton.Text = "Register";
+            this.regButton.UseVisualStyleBackColor = true;
+            this.regButton.Click += new System.EventHandler(this.regButton_Click);
+            // 
+            // regPwordBox
+            // 
+            this.regPwordBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.regPwordBox.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.regPwordBox.Location = new System.Drawing.Point(250, 180);
+            this.regPwordBox.Name = "regPwordBox";
+            this.regPwordBox.PasswordChar = '*';
+            this.regPwordBox.Size = new System.Drawing.Size(285, 33);
+            this.regPwordBox.TabIndex = 14;
+            // 
+            // regPwordLabel
+            // 
+            this.regPwordLabel.AutoSize = true;
+            this.regPwordLabel.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.regPwordLabel.ForeColor = System.Drawing.SystemColors.Control;
+            this.regPwordLabel.Location = new System.Drawing.Point(131, 183);
+            this.regPwordLabel.Name = "regPwordLabel";
+            this.regPwordLabel.Size = new System.Drawing.Size(104, 24);
+            this.regPwordLabel.TabIndex = 15;
+            this.regPwordLabel.Text = "Password";
+            // 
+            // regUnameLabel
+            // 
+            this.regUnameLabel.AutoSize = true;
+            this.regUnameLabel.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.regUnameLabel.ForeColor = System.Drawing.SystemColors.Control;
+            this.regUnameLabel.Location = new System.Drawing.Point(131, 124);
+            this.regUnameLabel.Name = "regUnameLabel";
+            this.regUnameLabel.Size = new System.Drawing.Size(113, 24);
+            this.regUnameLabel.TabIndex = 16;
+            this.regUnameLabel.Text = "Username";
+            // 
+            // regUnameBox
+            // 
+            this.regUnameBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.regUnameBox.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.regUnameBox.Location = new System.Drawing.Point(250, 121);
+            this.regUnameBox.Name = "regUnameBox";
+            this.regUnameBox.Size = new System.Drawing.Size(285, 33);
+            this.regUnameBox.TabIndex = 17;
+            // 
+            // regEmailLabel
+            // 
+            this.regEmailLabel.AutoSize = true;
+            this.regEmailLabel.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.regEmailLabel.ForeColor = System.Drawing.SystemColors.Control;
+            this.regEmailLabel.Location = new System.Drawing.Point(171, 62);
+            this.regEmailLabel.Name = "regEmailLabel";
+            this.regEmailLabel.Size = new System.Drawing.Size(64, 24);
+            this.regEmailLabel.TabIndex = 19;
+            this.regEmailLabel.Text = "Email";
+            // 
+            // regEmailBox
+            // 
+            this.regEmailBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.regEmailBox.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.regEmailBox.Location = new System.Drawing.Point(250, 59);
+            this.regEmailBox.Name = "regEmailBox";
+            this.regEmailBox.Size = new System.Drawing.Size(285, 33);
+            this.regEmailBox.TabIndex = 20;
+            // 
+            // regError
+            // 
+            this.regError.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.regError.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.regError.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.regError.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.regError.Location = new System.Drawing.Point(25, 231);
+            this.regError.Name = "regError";
+            this.regError.Size = new System.Drawing.Size(636, 26);
+            this.regError.TabIndex = 21;
+            this.regError.Text = "Sample Error Message";
+            this.regError.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.regError.Visible = false;
+            // 
+            // registerPanel
+            // 
+            this.registerPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.registerPanel.Controls.Add(this.regError);
+            this.registerPanel.Controls.Add(this.regEmailBox);
+            this.registerPanel.Controls.Add(this.regEmailLabel);
+            this.registerPanel.Controls.Add(this.regUnameBox);
+            this.registerPanel.Controls.Add(this.regUnameLabel);
+            this.registerPanel.Controls.Add(this.regPwordLabel);
+            this.registerPanel.Controls.Add(this.regPwordBox);
+            this.registerPanel.Controls.Add(this.regButton);
+            this.registerPanel.ForeColor = System.Drawing.SystemColors.Control;
+            this.registerPanel.Location = new System.Drawing.Point(16, 78);
+            this.registerPanel.Name = "registerPanel";
+            this.registerPanel.Size = new System.Drawing.Size(666, 430);
+            this.registerPanel.TabIndex = 3;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -358,19 +358,19 @@
         private System.Windows.Forms.Label loginPwordLabel;
         private System.Windows.Forms.TextBox loginPwordBox;
         private System.Windows.Forms.Button loginButton;
-        private System.Windows.Forms.Panel registerPanel;
-        private System.Windows.Forms.TextBox regEmailBox;
-        private System.Windows.Forms.Label regEmailLabel;
-        private System.Windows.Forms.TextBox regUnameBox;
-        private System.Windows.Forms.Label regUnameLabel;
-        private System.Windows.Forms.Label regPwordLabel;
-        private System.Windows.Forms.TextBox regPwordBox;
-        private System.Windows.Forms.Button regButton;
         private System.Windows.Forms.Button logPanelB;
         private System.Windows.Forms.Button regPanelB;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox regError;
         private System.Windows.Forms.TextBox logError;
+        private System.Windows.Forms.Button regButton;
+        private System.Windows.Forms.TextBox regPwordBox;
+        private System.Windows.Forms.Label regPwordLabel;
+        private System.Windows.Forms.Label regUnameLabel;
+        private System.Windows.Forms.TextBox regUnameBox;
+        private System.Windows.Forms.Label regEmailLabel;
+        private System.Windows.Forms.TextBox regEmailBox;
+        private System.Windows.Forms.TextBox regError;
+        private System.Windows.Forms.Panel registerPanel;
 
     }
 }
