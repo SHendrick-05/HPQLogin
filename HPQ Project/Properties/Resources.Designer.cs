@@ -61,7 +61,7 @@ namespace HPQ_Project.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to U:\HPQ\HPQ Project\database.xlsx.
+        ///   Looks up a localized string similar to database.xlsx.
         /// </summary>
         internal static string databasePath {
             get {
