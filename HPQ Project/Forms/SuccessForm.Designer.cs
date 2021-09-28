@@ -46,7 +46,7 @@
             this.top.Name = "top";
             this.top.Size = new System.Drawing.Size(670, 24);
             this.top.TabIndex = 1;
-            this.top.MouseMove += new System.Windows.Forms.MouseEventHandler(Drag);
+            this.top.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Drag);
             // 
             // title
             // 
@@ -59,7 +59,7 @@
             this.title.Size = new System.Drawing.Size(252, 22);
             this.title.TabIndex = 1;
             this.title.Text = "HPQ Project - Login System";
-            this.title.MouseMove += new System.Windows.Forms.MouseEventHandler(Drag);
+            this.title.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Drag);
             // 
             // close
             // 
@@ -86,7 +86,7 @@
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(657, 343);
+            this.textBox1.Size = new System.Drawing.Size(657, 210);
             this.textBox1.TabIndex = 3;
             this.textBox1.Text = resources.GetString("textBox1.Text");
             // 
