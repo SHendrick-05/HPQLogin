@@ -6,6 +6,7 @@ namespace HPQ_Project
     {
         private static readonly uint[] _lookup32 = CreateLookup32();
 
+        // Uint array of hex bytes, 00 to FF
         private static uint[] CreateLookup32()
         {
             var result = new uint[256];
@@ -17,6 +18,7 @@ namespace HPQ_Project
             return result;
         }
 
+        // Using a Lookup32, a function to convert a byte[] to hex string
         internal static string ByteArrayToHexViaLookup32(byte[] bytes)
         {
             var lookup32 = _lookup32;
