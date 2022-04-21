@@ -1,5 +1,5 @@
 # HPQLogin
-A secure autentication system
+A secure autentication system using PDPS (Prime Decomposition), a fairly new method. This was created for the Higher Project Qualification as an artefact.
 
 # Setup
 In order to make this work, you need to compile this yourself (Visual Studio 2012+)
